@@ -19,9 +19,7 @@ export const WishesProvider = ({ children }: { children: React.ReactNode }) => {
   const addWish = async (wish: Omit<Wish, "id" | "createdAt">) => {
     const newWish = {
       ...wish,
-      image:
-        wish.image ||
-        "https://sleepreviewmag.com/wp-content/uploads/2024/01/man-dreaming-bed.jpg",
+      image: wish.image,
       createdAt: new Date().toISOString(),
     };
     const data = await request(API_URL, {
