@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, Routes } from "react-router";
+import { HashRouter as Router, Route, Routes } from "react-router";
 import "./App.css";
 import { WishesProvider } from "./context/WishesContext";
 import Dashboard from "./pages/Dashboard";
