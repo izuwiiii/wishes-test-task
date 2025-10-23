@@ -5,7 +5,7 @@ import { useApi } from "../api/useApi";
 const WishesContext = createContext<any>(null);
 export const useWishes = () => useContext(WishesContext);
 
-const API_URL = "http://localhost:5000/wishes";
+const API_URL = "https://db-wishes.onrender.com/wishes";
 
 export const WishesProvider = ({ children }: { children: React.ReactNode }) => {
   const [wishes, setWishes] = useState<Wish[]>([]);
